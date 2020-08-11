@@ -5,7 +5,7 @@ int main()
 {
 	int a, b;
 	scanf_s("%d %d", &a, &b);
-	int many = abs(b - a) + 1;
+	float many = abs(b - a) + 1;
 	int x[1000];
 	int i;
 	if (a < b)
@@ -31,7 +31,7 @@ int main()
 	{
 		average += x[i];
 	}
-	average /= (float)many;
+	average /= many;
 	printf("Average = %.1f\n", average);
 	float sd = 0;
 	for (i = 0; i < many; i++)
